@@ -32,8 +32,8 @@ http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd">
     <bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
         <property name="host" value="email-smtp.us-west-2.amazonaws.com" />
         <property name="port" value="587" />
-        <property name="username" value="AKIAJEQM32SM644EB2FQ" />
-        <property name="password" value="AmaFXfPpFBCdDhdNGVbw0igNkb82aGRNlsifcM1U4QKL" />
+        <property name="username" value="${username}" />
+        <property name="password" value="${password}" />
         <property name="javaMailProperties">
             <props>
                 <prop key="mail.smtp.auth">true</prop>
